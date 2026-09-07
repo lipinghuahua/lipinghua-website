@@ -224,7 +224,7 @@ body {
 }
 
 
-.silkscreen-image {
+.cover-silkscreen-image {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -232,8 +232,36 @@ body {
   padding: 40px 20px 80px;
 }
 
+.cover-silkscreen-image img {
+  width: 80%;
+  height: auto;
+  display: block;
+}
+
+.silkscreen-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  padding: 0px 20px 80px;
+}
+
 .silkscreen-image img {
-  width: 90%;
+  width: 75%;
+  height: auto;
+  display: block;
+}
+
+.recipe-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  padding: 0px 20px 100px;
+}
+
+.recipe-image img {
+  width: 70%;
   height: auto;
   display: block;
 }
@@ -303,7 +331,7 @@ body {
 }
 
 .whatdidyoujusthave-page {
-  background: #959595;
+  background: #ffffff;
   min-height: 90vh;
 }
 
@@ -316,7 +344,7 @@ body {
 }
 
 .whatdidyoujusthave-image img {
-  width: 100%;
+  width: 80%;
   height: auto;
   display: block;
 }
@@ -507,4 +535,61 @@ body {
   to {
     opacity: 1;
   }
+}
+
+
+
+.tanger-slider {
+  width: 100%;
+  padding: 40px 20px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.tanger-slider img {
+  width: 80%;
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
+  display: block;
+  cursor: pointer;
+}
+
+.tanger-slider img {
+  cursor: e-resize;
+}
+
+
+.whatdidyoujusthave-slider {
+  width: 100%;
+  padding: 0px 20px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.whatdidyoujusthave-slider img {
+  width: 80%;
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
+  display: block;
+  cursor: pointer;
+}
+
+.whatdidyoujusthave-slider img {
+  cursor: e-resize;
+}
+
+.people-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  padding: 0px 10px 100px;
+}
+
+.people-image img {
+  width: 60%;
+  height: auto;
+  display: block;
 }

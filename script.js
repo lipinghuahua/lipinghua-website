@@ -103,3 +103,64 @@ if (flyingObject) {
 
   moveFlyingObject();
 }
+
+
+
+const tangerSlide = document.getElementById("tangerSlide");
+
+if (tangerSlide) {
+
+  const tangerImages = [
+    "find tanger in my bag/slide01.jpg",
+    "find tanger in my bag/slide02.jpg",
+    "find tanger in my bag/slide03.jpg",
+    "find tanger in my bag/slide04.jpg",
+    "find tanger in my bag/slide05.jpg",
+    "find tanger in my bag/slide06.jpg",
+  ];
+
+  let currentTangerSlide = 0;
+
+  tangerSlide.addEventListener("click", function () {
+
+    currentTangerSlide = currentTangerSlide + 1;
+
+    if (currentTangerSlide >= tangerImages.length) {
+      currentTangerSlide = 0;
+    }
+
+    tangerSlide.src = tangerImages[currentTangerSlide];
+
+  });
+
+}
+
+
+const whatdidyoujusthaveSlide = document.getElementById("whatdidyoujusthaveSlide");
+
+if (whatdidyoujusthaveSlide) {
+
+  const whatdidyoujusthaveImages = [
+    "whatdidyoujusthave/slide01.jpg",
+    "whatdidyoujusthave/slide02.jpg",
+    "whatdidyoujusthave/slide03.jpg",
+    "whatdidyoujusthave/slide04.jpg",
+    "whatdidyoujusthave/slide05.jpg",
+    "whatdidyoujusthave/slide06.jpg",
+  ];
+
+  let currentwhatdidyoujusthaveSlide = 0;
+
+  whatdidyoujusthaveSlide.addEventListener("click", function () {
+
+    currentwhatdidyoujusthaveSlide = currentwhatdidyoujusthaveSlide + 1;
+
+    if (currentwhatdidyoujusthaveSlide >= whatdidyoujusthaveImages.length) {
+      currentwhatdidyoujusthaveSlide = 0;
+    }
+
+    whatdidyoujusthaveSlide.src = whatdidyoujusthaveImages[currentwhatdidyoujusthaveSlide];
+
+  });
+
+}
