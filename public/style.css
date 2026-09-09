@@ -183,17 +183,18 @@ body {
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   gap: 100px;
-  align-items: center;
-  padding: 200px 40px 100px 120px;
+
+  padding: 200px 60px 100px;
 }
 
 .quffa-gallery img {
   width: calc(90% - 20px);
   height: 220px;
   object-fit: contain;
-
   display: block;
   cursor: zoom-in;
+
+  margin: 0 auto;
 }
 
 .lightbox {
@@ -360,16 +361,16 @@ body {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 30px;
-  align-items: center;
-  padding: 100px 150px 100px 120px;
+
+  padding: 100px 120px;
 }
 
 .liping-gallery img {
   width: calc(100% - 10px);
   height: 550px;
   object-fit: contain;
-
   display: block;
+  margin: 0 auto;
 }
 
 .whatdidyoujusthave-page {
@@ -444,14 +445,17 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-
-  padding: 50px 10px 100px;
+  align-items: center;
+  padding: 50px 20px 100px;
+  margin: 0 auto;
 }
 
 .seven-image img {
   width: 60%;
+  max-width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 
@@ -768,7 +772,7 @@ body {
 
   /* Flying object */
   .flying-object {
-    width: 55px;
+    width: 200px;
   }
 }
 
@@ -878,5 +882,16 @@ body {
     width: 100% !important;
     max-width: none !important;
     height: auto !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .seven-image {
+    padding: 70px 20px 120px;
+  }
+
+  .seven-image img {
+    width: 100%;
+    margin: 0 auto;
   }
 }
