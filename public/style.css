@@ -355,19 +355,21 @@ body {
 .liping-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 60px;
+  gap: 140px;
 
-  padding: 100px 120px;
+  width: 100%;
+  padding: 100px 120px 180px;
+  box-sizing: border-box;
 }
 
 .liping-gallery img {
-  width: calc(100% - 10px);
-  height: 550px;
+  width: 80%;
+  height: 400px;
   object-fit: contain;
   display: block;
   margin: 0 auto;
 }
+
 
 .whatdidyoujusthave-page {
   background: #ffffff;
@@ -861,12 +863,7 @@ body {
   }
 }
 
-.liping-gallery img {
-  width: 100%;
-  height: auto;
-  display: block;
-  cursor: default;
-}
+
 
 @media (max-width: 700px) {
 
