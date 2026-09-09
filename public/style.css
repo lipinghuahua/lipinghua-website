@@ -698,36 +698,44 @@ body {
   }
 
 
-  /* About popup */
-  .about-popup {
-    width: calc(100vw - 24px);
-    max-width: none;
-    max-height: 90vh;
-    overflow-y: auto;
+/* About popup — mobile */
+.about-popup {
+  width: 80vw;
+  max-width: 340px;
+  max-height: 78vh;
+  overflow-y: auto;
 
-    padding: 24px;
+  padding: 18px;
 
-    top: 50%;
-    left: 50%;
-  }
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  .about-top {
-    display: block;
-  }
+.about-top {
+  display: block;
+}
 
-  .about-details {
-    margin-top: 20px;
-  }
+.about-name {
+  font-size: 13px;
+}
 
-  .about-bio {
-    padding-top: 40px;
-    font-size: 14px;
-  }
+.about-details {
+  margin-top: 14px;
+  font-size: 12px;
+}
 
-  .about-tags {
-    margin-top: 30px;
-    font-size: 20px;
-  }
+.about-bio {
+  padding-top: 25px;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.about-tags {
+  margin-top: 22px;
+  font-size: 16px;
+  line-height: 1.1;
+}
 
 
   /* Galleries */
@@ -775,11 +783,6 @@ body {
     overflow-x: hidden;
   }
 
-  /* Make normal text blocks stay inside screen */
-  p,
-  div {
-    max-width: 100%;
-  }
 
   /* Homepage project menu */
   .project-menu {
@@ -827,22 +830,35 @@ body {
 
   .news {
     position: absolute !important;
+
     left: 20px !important;
     right: 20px !important;
+    top: 70px !important;
+
     width: auto !important;
-    max-width: calc(100vw - 40px) !important;
+    max-width: none !important;
+
+    transform: none !important;
+    margin: 0 !important;
+
+    box-sizing: border-box;
   }
 
-  .news * {
+  .news p {
+    width: 100% !important;
     max-width: 100% !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    transform: none !important;
   }
 
-  .news p,
-  .news div {
+  .sound-icon {
     left: auto !important;
     right: auto !important;
+    transform: none !important;
   }
-
 }
 
 .liping-gallery img {
@@ -859,7 +875,7 @@ body {
   }
 
   .liping-gallery img {
-    width: 160% !important;
+    width: 100% !important;
     max-width: none !important;
     height: auto !important;
   }
