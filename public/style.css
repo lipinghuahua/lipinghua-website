@@ -911,3 +911,23 @@ body {
     height: auto;
   }
 }
+
+/* Liping.ai — mobile only */
+@media (max-width: 700px) {
+
+  .liping-gallery {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 20px;
+    padding: 80px 15px 140px;
+  }
+
+  .liping-gallery img {
+    width: 80% !important;
+    max-width: 80% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    object-fit: contain;
+  }
+
+}
