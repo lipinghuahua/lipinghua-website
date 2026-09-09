@@ -681,6 +681,20 @@ body {
   display: block;
 }
 
+.video-section {
+  width: 850px;
+  background: black;
+  margin: 60px auto 120px;
+  padding: 30px;
+  transform: translateX(10px);
+}
+
+.project-video {
+  width: auto;
+  max-width: 80vw;
+  max-height: 80vh;
+  display: block;
+}
 
 
 
