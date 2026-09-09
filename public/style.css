@@ -751,17 +751,18 @@ body {
 @media (max-width: 700px) {
 
   .quffa-gallery {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 2fr !important;
     width: 100%;
-    gap: 20px !important;
+    gap: 40px !important;
     padding: 80px 15px 140px !important;
     box-sizing: border-box;
   }
 
   .quffa-gallery img {
-    width: 80% !important;
-    max-width: 80% !important;
+    width: 60% !important;
+    max-width: 60% !important;
     height: auto !important;
+    max-height: 60vh !important;
     margin: 0 auto !important;
     object-fit: contain;
   }
