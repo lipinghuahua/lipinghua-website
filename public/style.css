@@ -747,15 +747,26 @@ body {
     padding: 70px 12px 130px;
   }
 
+/* Quffa gallery — mobile only */
+@media (max-width: 700px) {
+
   .quffa-gallery {
-    padding: 70px 12px 130px;
-    gap: 8px;
+    grid-template-columns: 1fr !important;
+    width: 100%;
+    gap: 20px !important;
+    padding: 80px 15px 140px !important;
+    box-sizing: border-box;
   }
 
   .quffa-gallery img {
-    width: calc(50% - 4px);
-    height: auto;
+    width: 80% !important;
+    max-width: 80% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    object-fit: contain;
   }
+
+}
 
 
   /* Tanger slider */
